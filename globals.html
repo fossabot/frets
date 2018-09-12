@@ -916,19 +916,7 @@ img { max-width: 100%; }
 			<a href="classes/actionswithfields.html" class="tsd-kind-icon">Actions<wbr>With<wbr>Fields</a>
 		</li>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/appconfiguration.html" class="tsd-kind-icon">App<wbr>Configuration</a>
-		</li>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/appstate.html" class="tsd-kind-icon">App<wbr>State</a>
-		</li>
-		<li class=" tsd-kind-class">
-			<a href="classes/componentmap.html" class="tsd-kind-icon">Component<wbr>Map</a>
-		</li>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
 			<a href="classes/frets.html" class="tsd-kind-icon">FRETS</a>
-		</li>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/model.html" class="tsd-kind-icon">Model</a>
 		</li>
 		<li class=" tsd-kind-class">
 			<a href="classes/propswithfields.html" class="tsd-kind-icon">Props<wbr>With<wbr>Fields</a>
@@ -939,12 +927,6 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-class tsd-is-not-exported">
 			<a href="classes/simpleprops.html" class="tsd-kind-icon">Simple<wbr>Props</a>
 		</li>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/viewactions.html" class="tsd-kind-icon">View<wbr>Actions</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-has-type-parameter">
-			<a href="interfaces/iactions.html" class="tsd-kind-icon">IActions</a>
-		</li>
 		<li class=" tsd-kind-interface tsd-has-type-parameter">
 			<a href="interfaces/ifretsprops.html" class="tsd-kind-icon">IFrets<wbr>Props</a>
 		</li>
@@ -954,14 +936,8 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-interface tsd-has-type-parameter">
 			<a href="interfaces/irouteregistry.html" class="tsd-kind-icon">IRoute<wbr>Registry</a>
 		</li>
-		<li class=" tsd-kind-interface">
-			<a href="interfaces/istate.html" class="tsd-kind-icon">IState</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-has-type-parameter">
-			<a href="interfaces/iviewcollection.html" class="tsd-kind-icon">IView<wbr>Collection</a>
-		</li>
-		<li class=" tsd-kind-type-alias">
-			<a href="globals.html#iview" class="tsd-kind-icon">IView</a>
+		<li class=" tsd-kind-type-alias tsd-is-not-exported">
+			<a href="globals.html#main" class="tsd-kind-icon">main</a>
 		</li>
 	</ul>
 </nav>
@@ -974,9 +950,9 @@ img { max-width: 100%; }
 			<h2 id="getting-started">Getting Started</h2>
 			<p><code>npm install --save frets</code></p>
 			<p>Use <a href="https://github.com/sirtimbly/frets-starter">the Starter Project</a> to get going quickly.</p>
-			<p>Read the <a href="https://frets.gitlab.io/frets/docs">API docs</a></p>
+			<p>Read the <a href="https://sirtimbly.github.io/frets/">API docs</a></p>
 			<p>The basic SAM app lifecycle:
-			Action() -&gt; Model -&gt; State() -&gt; View() -&gt; {wait for client events that call an Action()}</p>
+			Action() -&gt; Model -&gt; State() -&gt; View() -&gt; [wait for client events that call an Action()]</p>
 			<p>Note:</p>
 			<blockquote>
 				<p>In FRETS the part of &quot;Model&quot; will be played by a function called &quot;validate&quot;, and the part of &quot;state&quot; will be played by a function call &quot;calculate&quot;. Sometimes, the &quot;View&quot; function is called the &quot;Render&quot; function - in case that helps you wrap your mind around things.</p>
@@ -1111,69 +1087,40 @@ F.calculator = (newProps: TodoListProps, oldProps: TodoListProps): <span class="
 						<h3>Classes</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-class"><a href="classes/actionswithfields.html" class="tsd-kind-icon">Actions<wbr>With<wbr>Fields</a></li>
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/appconfiguration.html" class="tsd-kind-icon">App<wbr>Configuration</a></li>
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/appstate.html" class="tsd-kind-icon">App<wbr>State</a></li>
-							<li class="tsd-kind-class"><a href="classes/componentmap.html" class="tsd-kind-icon">Component<wbr>Map</a></li>
 							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/frets.html" class="tsd-kind-icon">FRETS</a></li>
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/model.html" class="tsd-kind-icon">Model</a></li>
 							<li class="tsd-kind-class"><a href="classes/propswithfields.html" class="tsd-kind-icon">Props<wbr>With<wbr>Fields</a></li>
 							<li class="tsd-kind-class tsd-is-not-exported"><a href="classes/simpleactions.html" class="tsd-kind-icon">Simple<wbr>Actions</a></li>
 							<li class="tsd-kind-class tsd-is-not-exported"><a href="classes/simpleprops.html" class="tsd-kind-icon">Simple<wbr>Props</a></li>
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/viewactions.html" class="tsd-kind-icon">View<wbr>Actions</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Interfaces</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/iactions.html" class="tsd-kind-icon">IActions</a></li>
 							<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/ifretsprops.html" class="tsd-kind-icon">IFrets<wbr>Props</a></li>
 							<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/iregisteredfield.html" class="tsd-kind-icon">IRegistered<wbr>Field</a></li>
 							<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/irouteregistry.html" class="tsd-kind-icon">IRoute<wbr>Registry</a></li>
-							<li class="tsd-kind-interface"><a href="interfaces/istate.html" class="tsd-kind-icon">IState</a></li>
-							<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/iviewcollection.html" class="tsd-kind-icon">IView<wbr>Collection</a></li>
 						</ul>
 					</section>
-					<section class="tsd-index-section ">
+					<section class="tsd-index-section tsd-is-not-exported">
 						<h3>Type aliases</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-type-alias"><a href="globals.html#iview" class="tsd-kind-icon">IView</a></li>
+							<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#main" class="tsd-kind-icon">main</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
-		<section class="tsd-panel-group tsd-member-group ">
+		<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 			<h2>Type aliases</h2>
-			<section class="tsd-panel tsd-member tsd-kind-type-alias">
-				<a name="iview" class="tsd-anchor"></a>
-				<h3>IView</h3>
-				<div class="tsd-signature tsd-kind-icon">IView<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
+				<a name="main" class="tsd-anchor"></a>
+				<h3>main</h3>
+				<div class="tsd-signature tsd-kind-icon">main<span class="tsd-signature-symbol">:</span> <a href="classes/frets.html" class="tsd-signature-type">FRETS</a><span class="tsd-signature-symbol">&lt;</span><a href="classes/simpleprops.html" class="tsd-signature-type">SimpleProps</a><span class="tsd-signature-symbol">, </span><a href="classes/simpleactions.html" class="tsd-signature-type">SimpleActions</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/sirtimbly/frets/blob/fb6d64c/src/View.ts#L3">View.ts:3</a></li>
+						<li>Defined in <a href="https://github.com/sirtimbly/frets/blob/069d865/src/Frets.spec.ts#L17">Frets.spec.ts:17</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-siganture">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-parameters-title">Parameters</h4>
-									<ul class="tsd-parameters">
-										<li>
-											<h5>model: <span class="tsd-signature-type">any</span></h5>
-										</li>
-									</ul>
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
